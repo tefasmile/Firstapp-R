@@ -12,10 +12,12 @@ class BadgeNew extends React.Component{
   state = { form:{} };
 
   handleChange = e => {
+    //Solucion de sobrescritura para cada input
+    const nextForm = this.state.form;
+    nextForm[e.target.name]= e.target.value;
+    
     this.setState({
-      form: {
-        [e.target.name]: e.target.value,
-      },
+      form: nextForm,
     });
   };
 
