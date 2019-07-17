@@ -8,8 +8,14 @@ import BadgeForm from '../components/BadgeForm';
 
 //componente llamado BadgeNew
 class BadgeNew extends React.Component{
-  //inicializamos el state y el form
-  state = { form:{} };
+  //inicializamos el state y el form de los values
+  state = { form:{
+    firstName: '',
+    lastName: '',
+    email: '',
+    jobTitle: '',
+    twitter: '',
+  } };
 
   handleChange = e => {
     //Solucion de sobrescritura para cada input
