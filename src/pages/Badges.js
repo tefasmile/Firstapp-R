@@ -13,10 +13,10 @@ class Badges extends React.Component {
     data: [
       {
         id: '2de30c42-9deb-40fc-a41f-05e62b5939a7',
-        firstName: 'Freda',
-        lastName: 'Grady',
-        email: 'Leann_Berge@gmail.com',
-        jobTitle: 'Legacy Brand Director',
+        firstName: 'Wlad',
+        lastName: 'Williams',
+        email: 'wladwill@gmail.com',
+        jobTitle: 'Dinamix Brand Director',
         twitter: 'FredaGrady22221-7573',
         avatarUrl:
           'https://www.gravatar.com/avatar/f63a9c45aca0e7e7de0782a6b1dff40b?d=identicon',
@@ -67,9 +67,15 @@ class Badges extends React.Component {
           <div className="Badge__list">
             <div className="Badges__container">
               <ul className="list-unstyled">
+                {/* uso de map para creacion de badges */}
                 {this.state.data.map((badge) =>{
                   return (
-                    <li></li>
+                    <li key={badge.id}>
+                      <p>
+                        {badge.firstName} 
+                        {badge.lastName}
+                      </p>
+                    </li>
                   )
                 })}
               </ul>
