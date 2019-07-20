@@ -4,6 +4,7 @@ import React from 'react';
 import './styles/Badges.css';
 import confLogo from '../images/badge-header.svg';
 import Navbar from '../components/Navbar';
+import BadgesList from '../components/BadgesList';
 
 class Badges extends React.Component {
 
@@ -66,19 +67,7 @@ class Badges extends React.Component {
 
           <div className="Badge__list">
             <div className="Badges__container">
-              <ul className="list-unstyled">
-                {/* uso de map para creacion de badges */}
-                {this.state.data.map((badge) =>{
-                  return (
-                    <li key={badge.id}>
-                      <p>
-                        {badge.firstName} 
-                        {badge.lastName}
-                      </p>
-                    </li>
-                  )
-                })}
-              </ul>
+              <BadgesList badges={this.state.data} />
             </div>
           </div>
         </div>
