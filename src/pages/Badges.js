@@ -20,7 +20,7 @@ class Badges extends React.Component {
         jobTitle: 'Dinamix Brand Director',
         twitter: 'FredaGrady22221-7573',
         avatarUrl:
-          'https://www.gravatar.com/avatar/f63a9c45aca0e7e7de0782a6b1dff40b?d=identicon',
+          'https://fotos.perfil.com/2012/07/01/cropped/250/250/center/Tom-Cruise.jpg',
       },
       {
         id: 'd00d3614-101a-44ca-b6c2-0be075aeed3d',

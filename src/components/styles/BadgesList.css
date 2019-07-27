@@ -1,5 +1,6 @@
 .BadgesList ul>li {
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
+  margin-bottom: 1.2em;
 }
 
 .BadgesListItem {
@@ -8,6 +9,7 @@
   border-radius: 5px;
   display: flex;
   padding: 1rem;
+  margin-bottom: .5em;
 }
 
 .BadgesListItem__avatar {
@@ -16,4 +18,9 @@
   margin-right: 0.5rem;
   width: 80px;
   height: 80px;
+}
+
+/*****Mi css************/
+.BadgesText {
+  display: flex;
 }
