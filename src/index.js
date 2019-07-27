@@ -6,6 +6,7 @@ import './global.css';
 import BadgeNew from './pages/BadgeNew';
 import Badges from './pages/Badges';
 import Badge from './components/Badge';
+import App from './components/App';//aqui pondremos el router domo con sus rutas
 
 
 
