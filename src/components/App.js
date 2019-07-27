@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Switch ,Route } from 'react-router-dom';
 
 //agregamos nuestras paginas de la app
 import BadgeNew from '../pages/BadgeNew';
@@ -9,10 +9,11 @@ import Badges from '../pages/Badges';
 function App() {
   return(
     <BrowserRouter>
-      <div>
-        <Route path="/badges" component={Badges} />
-        <Route path="/badges/new" component={BadgeNew} />
-      </div>
+      <Switch>
+        {/* Anexamos nuestras rutas para las paginas */}
+        <Route exact path="/badges" component={Badges} />
+        <Route exact path="/badges/new" component={BadgeNew} />
+      </Switch>
     </BrowserRouter>
   );
 }
