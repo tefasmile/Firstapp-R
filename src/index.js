@@ -3,15 +3,13 @@ import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 
 import './global.css';
-import BadgeNew from './pages/BadgeNew';
-import Badges from './pages/Badges';
-import Badge from './components/Badge';
+//import Badge from './components/Badge';
 import App from './components/App';//aqui pondremos el router domo con sus rutas
 
 
 
 const container = document.getElementById('app');
-ReactDOM.render(<Badges />, 
+ReactDOM.render(<App />, 
     container
 );
 
