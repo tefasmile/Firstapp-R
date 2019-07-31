@@ -5,11 +5,16 @@ import Navbar from './Navbar';
 function Layout(props) {
   const children = props.children;
 
+  return props.children;
   return (
-    <React.Fragment>
+    <div>
       <Navbar />
       {props.children}
-    </React.Fragment>
+    </div>
+    // <React.Fragment>
+    //   <Navbar />
+    //   {props.children}
+    // </React.Fragment>
   );
 }
 

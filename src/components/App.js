@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Switch ,Route } from 'react-router-dom';
 
-//importamos el layout
+//importamos el layout (conformado por navbar y )
 import Layout from '../components/Layout';
 //agregamos nuestras paginas de la app
 import BadgeNew from '../pages/BadgeNew';
@@ -11,11 +11,13 @@ import Badges from '../pages/Badges';
 function App() {
   return(
     <BrowserRouter>
-      <Switch>
-        {/* Anexamos nuestras rutas para las paginas */}
-        <Route exact path="/badges" component={Badges} />
-        <Route exact path="/badges/new" component={BadgeNew} />
-      </Switch>
+      <Layout>
+        <Switch>
+          {/* Anexamos nuestras rutas para las paginas */}
+          <Route exact path="/badges" component={Badges} />
+          <Route exact path="/badges/new" component={BadgeNew} />
+        </Switch>
+      </Layout>
     </BrowserRouter>
   );
 }
