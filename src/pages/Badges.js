@@ -61,6 +61,7 @@ class Badges extends React.Component {
         </div>
         <div className="Badge__container">
           <div className="Badges__buttons">
+            {/* Anexamos link en vez de usar etiqueta <a> */}
             <Link to="/badges/new" className="btn btn-primary">
               New Badge Container
             </Link>

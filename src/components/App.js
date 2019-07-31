@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Switch ,Route } from 'react-router-dom';
 
+//importamos el layout
+import Layout from '../components/Layout';
 //agregamos nuestras paginas de la app
 import BadgeNew from '../pages/BadgeNew';
 import Badges from '../pages/Badges';
