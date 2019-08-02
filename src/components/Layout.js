@@ -7,10 +7,11 @@ function Layout(props) {
 
   return props.children;
   return (
-    <div>
-      <Navbar />
-      {props.children}
-    </div>
+      <React.Fragment>
+        <Navbar />
+        {props.children}
+      </React.Fragment>
+    
     // <React.Fragment>
     //   <Navbar />
     //   {props.children}
